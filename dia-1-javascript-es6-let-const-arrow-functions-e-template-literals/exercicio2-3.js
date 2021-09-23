@@ -4,5 +4,5 @@ let cont = 0
 
 button.addEventListener('click', () => {
   cont += 1;
-  counter.innerHTML = cont;
+  counter.innerHTML = `Contador: ${cont}`;
 })
