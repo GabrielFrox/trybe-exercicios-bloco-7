@@ -1,9 +1,17 @@
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// const factorial = num => num > 1 ? num * factorial(num - 1) : 1; // Seguindo a lógica do gabarito
+// console.log(factorial(4));
 
-// Seu código aqui.
 
-const sortedArray = () => {
-  const newArray = oddsAndEvens.sort(function(a, b) {return a - b}) // https://stackoverflow.com/questions/1063007/how-to-sort-an-array-of-integers-correctly - Referênciei pois não entendi 100% como funciona
-  return newArray
+
+// solução com a lógica do gabarito
+const factorial = number => {
+  let result = 1;
+
+  for (let index = 2; index <= number; index += 1) {
+      result *= index;
+  }
+
+  return result;
 }
-console.log(`Os números ${sortedArray()} se encontram ordenados de forma crescente!`)
+
+console.log(factorial(5));
